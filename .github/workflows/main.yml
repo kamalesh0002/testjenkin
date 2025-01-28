@@ -1,0 +1,11 @@
+name: First Workflows
+on: workflow_dispatch  # When should the workflow to trigger or run. workflow_dispatch=trigger manually
+
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest # Runner
+    steps:
+      - name: print hello
+        run: echo "Hello" # Print shell script
+      - name: print World
+        run: echo "World" # Print shell script
